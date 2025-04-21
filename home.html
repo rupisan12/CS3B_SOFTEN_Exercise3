@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=League Spartan"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/data_val.js"></script>
+    <script src="assets/data_rev.js"></script>
+    <script src="assets/data_bar.js"></script>
+    <script src="assets/data_tra.js"></script>
+    <script src="assets/data_do.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <div class="wrapper site-wrapper site-nxt">
+          <div class="title-wrapper">
+            <h2>TRIP.TO</h2>
+          </div>
+
+          <div class="nav-bar-site">
+            <nav class="comp-wrapper">
+              <ul class="nav-wrapper">
+                <li class="b-nav logo-fs">
+                  <a href="#" class="logo-font logo-fs">Home</a>
+                </li>
+                <li class="b-nav logo-fs">
+                  <a href="feature.html" class="logo-font logo-fs">Feature</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="nav-bar">
+            <div class="nav-item">
+              <i class="fa-solid fa-envelope" style="color: #2f2f2f"></i>
+            </div>
+            <div class="nav-item">
+              <i class="fa-solid fa-user" style="color: #2f2f2f"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <hr />
+
+      <section class="hero-main">
+        <div class="hero-wrapper">
+          <div class="info">
+            <div class="dash-con">
+              <h2>Dashboard</h2>
+              <h4>Here's what's going on at your business right now</h4>
+            </div>
+
+            <div class="items-con">
+              <div class="item">
+                <span class="icon-span-con"
+                  ><i
+                    class="fa-solid fa-plane-departure icon-fa icon-span"
+                    style="color: #2f2f2f"
+                  ></i
+                ></span>
+                <div class="text-con">
+                  <h4>54 new travelies</h4>
+                  <p>On going travel</p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="icon-span-con"
+                  ><i
+                    class="fa-solid fa-plane-slash icon-fa icon-span"
+                    style="color: #2f2f2f"
+                  ></i
+                ></span>
+                <div class="text-con">
+                  <h4>12 Canceled</h4>
+                  <p>Canceled Fligths</p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="icon-span-con"
+                  ><i
+                    class="fa-solid fa-bell-concierge icon-fa icon-span"
+                    style="color: #2f2f2f"
+                  ></i
+                ></span>
+                <div class="text-con">
+                  <h4>100 Pending Request</h4>
+                  <p>Awaiting approval</p>
+                </div>
+              </div>
+            </div>
+            <hr class="line-con" />
+            <div class="graph-stat">
+              <div class="graph-title">
+                <h3>Total Revenue</h3>
+                <p>All revenue received across all channels</p>
+              </div>
+              <canvas id="myChart-a" width="700" height="400"></canvas>
+            </div>
+          </div>
+
+          <div class="graph-info">
+            <div class="square-graph">
+              <div class="stat-graph">
+                <div class="in-graph">
+                  <h5>Total Trips</h5>
+                  <h6>Last 7 Days</h6>
+                </div>
+                <h4>10, 754</h4>
+              </div>
+              <div class="chart-info">
+                <canvas id="myChart-b" width="400" height="400"></canvas>
+              </div>
+              <div class="info-chart-con">
+                <div class="mt-stat-1">
+                  <div class="bullet-form b-cl"></div>
+                  <h6 class="bullet-text fa-at">Completed</h6>
+                  <h6 class="bullet-text per">76%</h6>
+                </div>
+                <div class="mt-stat-2">
+                  <div class="bullet-form a-cl"></div>
+                  <h6 class="bullet-text fa-st">On Going</h6>
+                  <h6 class="bullet-text per">24%</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="square-graph">
+              <div class="stat-graph">
+                <div class="in-graph">
+                  <h5>Total Travelies</h5>
+                  <h6>Last 7 Days</h6>
+                </div>
+                <h4>80, 754</h4>
+              </div>
+              <div class="chart-info chart-b">
+                <canvas id="myChart-c" width="400" height="400"></canvas>
+              </div>
+            </div>
+            <div class="square-graph">
+              <div class="stat-graph">
+                <div class="in-graph">
+                  <h5>Top Coupons</h5>
+                  <h6>Last 7 Days</h6>
+                </div>
+              </div>
+              <div class="chart-info">
+                <canvas id="myChart-d" width="210" height="210"></canvas>
+              </div>
+              <div class="info-chart-con">
+                <div class="mt-stat-1">
+                  <div class="bullet-form b-cl"></div>
+                  <h6 class="bullet-text fa-at">Percentage Discount</h6>
+                  <h6 class="bullet-text per">66%</h6>
+                </div>
+                <div class="mt-stat-2">
+                  <div class="bullet-form a-cl"></div>
+                  <h6 class="bullet-text fa-st">Fixed Discount</h6>
+                  <h6 class="bullet-text per">34%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="square-graph">
+              <div class="stat-graph">
+                <div class="in-graph">
+                  <h5>Bookings</h5>
+                  <h6>Last 7 Days</h6>
+                </div>
+                <h4>56, 871</h4>
+              </div>
+              <div class="chart-info del-chart">
+                <canvas id="myChart-del" width="210" height="210"></canvas>
+              </div>
+              <div class="info-chart-con">
+                <div class="mt-stat-1">
+                  <div class="bullet-form b-cl"></div>
+                  <h6 class="bullet-text fa-at">Fullfilled</h6>
+                  <h6 class="bullet-text per">56%</h6>
+                </div>
+                <div class="mt-stat-2">
+                  <div class="bullet-form a-cl"></div>
+                  <h6 class="bullet-text fa-st">Cancelled</h6>
+                  <h6 class="bullet-text per">44%</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="stat-info">
+            <div class="sec-con">
+              <h3>Registered Companies</h3>
+              <div class="total-stat">
+                <div class="stat-con">
+                  <h5>30.00K</h5>
+                  <span class="badge-stat"> 33.33% - 1.03k</span>
+                  <span class="month-class">From last month</span>
+                </div>
+
+                <div class="info-stat">
+                  <i class="fa-solid fa-building"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec-con">
+              <h3>Registered Tour Guuides</h3>
+              <div class="total-stat">
+                <h3>100.00K</h3>
+                <span class="badge-stat">0.10% - 100</span>
+                <span class="month-class">From past seven days</span>
+              </div>
+
+              <div class="info-stat"></div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/04b3229b62.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
